@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardiovascular disease prediction</title>
+<style type="text/css">
+  .registration{
+      width:1000px;
+	  height:650px;
+	  background-color:rgba(0,0,0,0.1);
+	  margin-top:100px;
+	  margin-left:100px;
+	  color:white;
+	  border-radius: 25px;
+	  margin-right:400px;
+	  padding-top:30px;
+	  box-shadow:inset -6px -6px rgba(0,0,0,0.01);
+	  -webkit-border-radius:10px;
+}
+.b{
+  background: #eb94d0;
+   background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+font-family:cursive ;
+  color: #fafafa;
+  font-size: 14px;
+  padding:8px;
+  text-decoration: none;
+}
+.b:hover {
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none;
+}
+	h1{
+    font-style: oblique;
+    font-weight: bold;
+    background-color:rgba(0,0,0, 0.1);
+    color:white;text-align:center;
+    clear:left;
+    font-family:Lucida handwriting;
+  }
+  h2,h3{
+      font-family:cursive;
+  }
+    body {
+    /* The image used */
+    background-image: url("heart 1.jpg");
+    /* Full height */
+    height: 100%; 
+          color:white;
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+}}
+</style>
+</head>
+<body>
+<h1><center>Heart Disease Prediction</center></h1>
+<marquee><h2>KNOW YOUR CHANCES!!!!!!!!</h2></marquee>
+<div class=registration align=center>
+
+<h2>Enter the details</h2>
+<form action="connection.php" method="post">
+   Age*                  <input type="number" name='age' placeholder="" required /><br><br>
+  Gender*                <input type="text" name='gender'   placeholder="" required /><br><br>
+  Chest Pain Type(CP)*   <select name="cp"><option value=" " selected disabled hidden> choose here</option><option value="1"> typical angina</option><option value="2">atypical angina</option><option value="3">non-anginal pain</option><option value="4">asymptomatic </option></select><br><br>
+  Resting Bloog Pressure(trestbps)* <input type="number" name='trestbps' placeholder="in mm Hg on admission to the hospital" required /><br><br>
+  Serum Cholestrol(chol)* <input type="number" name='chol' placeholder="in mg/dl" required /><br><br>
+  Resting Electrocardiograph Results(restecg)* <select name="restecg"><option value=" " selected disabled hidden> choose here</option><option value="0">normal</option><option value="1">having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) </option><option value="2">showing probable or definite left ventricular hypertrophy by Estes' criteria </option></select><br><br>
+  Maximum Heart Rate achieved (thalach)*  <input type="number" name='thalach' placeholder="" required /><br><br>
+  Excercize Induced Angina(exang)* <select name="exang"><option value=" " selected disabled hidden> choose here</option><option value="1">yes</option><option value="0"> no </option></select><br><br>
+  ST Depression induced by exercise relative to rest(oldpeak)* <input type="number" name='oldpeak' placeholder="" required /><br><br>
+  Slope of the peak exercise ST segment(slope)*  <select name="slope"><option value=" " selected disabled hidden> choose here</option><option value="1"> upsloping </option><option value="2">flat </option><option value="3">downsloping </option></select><br><br>
+  Number of major vessels colored by flourosopy(ca)*  <select name="ca"><option value=" " selected disabled hidden> choose here</option><option value="0"> 0 </option><option value="1"> 1 </option><option value="2">2 </option><option value="3">3 </option></select><br><br>
+  Thal*         <select name="thal"><option value=" " selected disabled hidden> choose here</option><option value="3"> normal </option><option value="6">fixed defect</option><option value="7">reversable defect </option></select><br><br>
+  Fasting Blood Sugar(fbs)* <select name="fbs"><option value=" " selected disabled hidden > choose here</option><option value="1">yes</option><option value="0"> no </option></select><br><br>
+<input class="b" type="SUBMIT" value="PREDICT"/><br><br><br>
+			</form>
+</div>
+<div>
+<footer style="text-align:center;color:white;background-color:rgba(0,0,0, 0.1);">
+<b> Copyright &copy cardiodocpred.com </b></footer>
+</div>
+<script>
+</script>
+</body>
+</html>
+
